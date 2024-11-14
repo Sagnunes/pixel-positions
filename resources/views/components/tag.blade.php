@@ -1,4 +1,4 @@
-@props(['size'=>'base'])
+@props(['size'=>'base','tag'])
 @php
     $defaultClasses = 'bg-white/10 rounded-xl font-bold hover:bg-white/25 transition-colors duration-300';
 
@@ -7,4 +7,4 @@ if($size === 'base')
 if($size === 'small')
     $defaultClasses .= ' px-3 py-1 text-2xs';
 @endphp
-<a href="#" class="{{$defaultClasses}}">{{$slot}}</a>
+<a href="#" class="{{$defaultClasses}}">{{$tag->name}}</a>
