@@ -7,4 +7,4 @@ if($size === 'base')
 if($size === 'small')
     $defaultClasses .= ' px-3 py-1 text-2xs';
 @endphp
-<a href="#" class="{{$defaultClasses}}">{{$tag->name}}</a>
+<a href="/tags/{{$tag->name}}" class="{{$defaultClasses}}">{{$tag->name}}</a>
